@@ -60,7 +60,7 @@ class ModuleCase(unittest.TestCase):
 
         # numerically check that this is optimal
         v_high = voltage + 1e-5
-        v_low = voltage - 1e5
+        v_low = voltage - 1e-5
 
         i_high = modules.calculate_module_current('TSM PA05', 1000, 25, v_high)
         i_low = modules.calculate_module_current('TSM PA05', 1000, 25, v_low)
